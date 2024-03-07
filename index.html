@@ -14,7 +14,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: auto;
+            height: 100vh;
+            text-align: center;
         }
 
         .animated-text {
@@ -31,10 +32,16 @@
                 transform: translateY(0);
             }
         }
+
+        @media only screen and (max-width: 600px) {
+            .animated-text {
+                font-size: 1.5rem; /* Adjust font size for smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
     <h1 class="animated-text">Your Order Confirmed!! Delivery In 5 Day's ✅</h1>
-    <p>❤️ VCdeals24 - Useful & unique</p>
+    <p>Footer ❤️ VCdeals24 - Useful & unique</p>
 </body>
 </html>
