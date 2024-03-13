@@ -15,10 +15,11 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            text-align: center;
         }
 
         .animated-text {
-            animation: slideIn 0.100s ease forwards;
+            animation: slideIn 0.10s ease forwards;
         }
 
         @keyframes slideIn {
@@ -31,34 +32,42 @@
                 transform: translateY(0);
             }
         }
-        /* Footer Styles */
-        footer {
-            background-color: #000000; /* Dark background color */
-            color: #fff; /* White text */
-            text-align: center;
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
-        }
-        /* Responsive Styles */
-        @media only screen and (max-width: 768px) {
-            .container {
-                max-width: 95%;
+
+        @media only screen and (max-width: 600px) {
+            .animated-text {
+                font-size: 1.5rem; /* Adjust font size for smaller screens */
             }
         }
 
-        @media only screen and (max-width: 400px) {
-            .container {
-                border-radius: 0;
-            }
+        /* Navbar styles */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000; /* Dark background color */
+            padding: 10px 0; /* Add padding top and bottom */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        nav a {
+            color: #ffffff; /* White text color */
+            text-decoration: none; /* Remove underline */
+            margin-right: 20px; /* Add space between links */
         }
     </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav>
+        <a href="https://vcdeals24.github.io/Cash-On-Delivery/">Home</a>
+    </nav>
+
     <h1 class="animated-text">Your Order Confirmed!! Delivery In 5 Day's ✅</h1>
     
     <!-- Footer -->
-<footer>
-    © 2024 VCdeals24. All rights reserved.
-</footer>
+    <footer>
+        © 2024 VCdeals24. All rights reserved.
+    </footer>
 </body>
 </html>
