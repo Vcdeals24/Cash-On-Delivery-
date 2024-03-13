@@ -32,10 +32,24 @@
                 transform: translateY(0);
             }
         }
+        /* Footer Styles */
+        footer {
+            background-color: #000000; /* Dark background color */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+        /* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            .container {
+                max-width: 95%;
+            }
+        }
 
-        @media only screen and (max-width: 600px) {
-            .animated-text {
-                font-size: 1.5rem; /* Adjust font size for smaller screens */
+        @media only screen and (max-width: 400px) {
+            .container {
+                border-radius: 0;
             }
         }
     </style>
